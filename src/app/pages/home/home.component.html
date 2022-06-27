@@ -1,0 +1,54 @@
+<div class="container-fluid">
+
+  <ngb-carousel class="slider">
+    <ng-template ngbSlide *ngFor="let image of Images">
+      <div class="wrapper">
+        <img [src]="image.imgUrl" alt="Random first slide">
+      </div>
+      <div class="carousel-caption">
+
+      </div>
+    </ng-template>
+
+  </ngb-carousel>
+</div>
+
+
+
+
+
+<div class="container mt-5 mb-5">
+
+
+  <!-- foodbox -->
+  <div class="container mt-4 mb-4 ">
+    <h1 class="text-center">Ürünlerimiz </h1>
+    <div class="row d-none d-sm-flex">
+
+      <div class="col-lg-3 mt-3" *ngFor="let fd of Products;index as i">
+        <div class="foodbox" *ngIf="i<=3">
+          <img src="{{fd.imgUrl}}">
+          <h1>{{fd.title}}</h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="row d-sm-none mb-4">
+      <div class="container-fluid">
+
+        <ngb-carousel class="product">
+          <ng-template ngbSlide *ngFor="let product of Products">
+            <div class="wrapper">
+              <img [src]="product.imgUrl" alt="Random first slide">
+            </div>
+            <div class="carousel-caption">
+
+            </div>
+          </ng-template>
+
+        </ngb-carousel>
+      </div>
+
+    </div>
+    <a routerLink="menu" class="viewmore mt-2">Daha fazlası için <i class="bi bi-arrow-right-short"></i></a>
+  </div>

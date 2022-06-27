@@ -1,0 +1,15 @@
+.mat-form-field {
+    width: 100%;
+}
+
+.image-select {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+
+}
+
+.img-previwer {
+    max-width: 200px;
+    max-height: 200px;
+}

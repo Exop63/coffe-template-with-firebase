@@ -1,0 +1,28 @@
+<div class="container-fluid footer mt-5 bg-dark">
+    <div class="row">
+
+        <!-- name -->
+        <div class="col-lg-6">
+            <a class="navbar-brand" routerLink="">
+                <img *ngIf="Business.brandImageUrl" [src]="Business.brandImageUrl"
+                    class="d-inline-block align-top brand-logo" alt="">
+                &nbsp; {{Business.brandName}}</a>
+            <p>UYGUN FİYAT, ÜSTÜN KALİTE !</p>
+
+        </div>
+
+
+        <!-- sosyal medya -->
+        <div class="col-lg-2">
+            <a *ngFor="let item of Business.social" [href]="item.url" target="_blank"><i
+                    [class]="'bi bi-'+item.icon +' socuil-icon'"></i></a>
+            <button target="_blank" class="btn">
+                <!-- +90 552 242 52 95 -->
+                <a [href]="'https://wa.me/'+Business.whatsapNumber">Whatsapp</a>
+                <a [href]="'https://wa.me/'+Business.whatsapNumber"><i class="bi bi-whatsapp"></i></a>
+            </button>
+
+        </div>
+
+    </div>
+</div>

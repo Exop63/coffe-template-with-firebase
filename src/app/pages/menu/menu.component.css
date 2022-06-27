@@ -1,0 +1,35 @@
+.foodbox
+{
+    padding: 10px 5px;
+}
+.foodbox img
+{
+    width: 100%;
+    height: 429px;
+    object-fit: cover;
+    border-radius: 5px;
+
+}
+.foodbox h1
+{
+    font-size: 18px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+.shop
+{
+    padding: 5px 5px;
+    font-size: 16;
+    background-color: rgb(255, 217, 0);
+    color: black;
+    border-radius: 25px;
+    text-decoration: none;
+
+}
+@media screen and (max-width:100%) {
+    form
+
+    {
+        width: 100%;
+    }
+}

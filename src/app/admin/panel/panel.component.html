@@ -1,0 +1,17 @@
+<mat-drawer-container class="nav-container" autosize>
+  <mat-drawer #drawer class="sidenav" mode="side">
+    <mat-nav-list>
+      <mat-list-item (click)="navigate(item.url)" class="parent" *ngFor="let item of MenuItems">
+        <span class="full-width"> {{item.title}} </span>
+        <mat-icon mat-list-icon> {{item.icon}}</mat-icon>
+      </mat-list-item>
+
+    </mat-nav-list>
+  </mat-drawer>
+
+  <div class="sidenav-content">
+    <router-outlet></router-outlet>
+
+  </div>
+
+</mat-drawer-container>

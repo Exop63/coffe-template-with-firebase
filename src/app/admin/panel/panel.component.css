@@ -1,0 +1,14 @@
+.nav-container {
+    width: 100%;
+    height: calc(100vh - 65px);
+}
+
+.sidenav-content {
+    height: 100%;
+    margin: 20px;
+    align-items: center;
+}
+
+.sidenav {
+    padding: 20px;
+}
